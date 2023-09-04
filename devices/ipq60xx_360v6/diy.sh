@@ -47,8 +47,6 @@ CONFIG_PMIC_OPREGION=n
 CCONFIG_RYPTO_CRC32_ARM64=n
 ' >> ./target/linux/ipq60xx/config-4.4
 
-sed -i "s/SUBTARGET:=generic/SUBTARGET:=360v6/" target/linux/ipq60xx/generic/target.mk
-
 mv -f target/linux/ipq60xx/generic target/linux/ipq60xx/360v6
 
-sed -i "s/SUBTARGETS:=generic /SUBTARGETS:=360v6 /" target/linux/ipq60xx/Makefile
+sed -i "s/SUBTARGETS:=generic/SUBTARGETS:=360v6/" target/linux/ipq60xx/Makefile
